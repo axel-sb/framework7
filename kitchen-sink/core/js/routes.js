@@ -3,6 +3,9 @@ var routes = [
   {
     path: '/',
     componentUrl: './pages/home.html',
+    options: {
+      transition: 'f7-dive',
+    },
     name: 'home',
   },
   // About page

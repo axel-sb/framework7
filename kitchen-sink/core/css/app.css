@@ -1,3 +1,4 @@
+/* #region f7 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 @font-face {
@@ -232,7 +233,7 @@
 .demo-swiper-multiple swiper-slide,
 .demo-swiper::part(slide),
 .demo-swiper-multiple::part(slide) {
-  font-size: 25px;
+  font-size: 17px;
   font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,17 +246,15 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
-  background: #fff;
-  color: #000;
+  align-items: flex-start;
 }
 .demo-swiper-multiple swiper-slide {
   box-sizing: border-box;
   border: 1px solid #ccc;
-  background: #fff;
+  background: rgba(22, 22, 22, 0.8);
 }
 .demo-swiper-multiple {
-  margin: 0px 0 35px;
+  margin: 50px 0 50px;
   font-size: 18px;
   height: 120px;
 }
@@ -295,7 +294,7 @@
 }
 .demo-swiper-custom .swiper-pagination .swiper-pagination-bullet-active {
   z-index: 1;
-  border: 1px solid #007aff;
+  border: 1px solid #d900ff;
   transform: scale(1.4);
 }
 .demo-swiper-cube {
@@ -685,3 +684,391 @@ code {
     border-left-color: #282828;
   }
 }
+/* #endregion */
+
+
+/**
+ * Custom css ----------------------------------------------------
+ */
+
+.navbar .title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  font-family: Roboto, sans-serif;
+}
+
+.st0 {
+  clip-path: url(#SVGID_2_);
+  fill: #fff;
+}
+
+.st1 {
+  clip-path: url(#SVGID_2_);
+  fill: #8103c3;
+}
+
+#Ebene_1 {
+  height: 19px;
+}
+
+/*
+/* Swiper
+**/
+swiper-container.demo-swiper > swiper-slide.swiper-slide-active {
+  height: 534px!important;
+  bottom: 0;
+}
+
+swiper-container.demo-swiper-multiple > swiper-slide.swiper-slide-next {
+  height: 120px!important;
+}
+
+swiper-container.demo-swiper > swiper-slide.swiper-slide-active:has(article) {
+  height: 100vh!important;
+  overflow: scroll;
+}
+
+article {
+  /* transform: translate(0px, 100vh); */
+  position: relative;
+  top: 0;
+  padding: 0 2rem
+}
+
+.article-text {
+  font-size: 1rem;
+  /* padding: 0 2rem; */
+}
+
+.cover-story {
+  font-family: Anybody, Roboto, sans-serif;
+  text-align: right;
+  padding-top: 4rem;
+  padding-right: 3rem;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #333;
+}
+
+/**
+ /* copy of hugo styles )======================= ↓
+ /*
+
+/* #region reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+img,
+picture,
+video,
+canvas,
+svg,
+iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  border: none;
+}
+; #endregion
+/* #endregion */
+
+:root {
+  --shadow-color: 60deg 4% 52%;
+  --shadow-elevation-low: 0.3px 0.5px 0.4px hsl(var(--shadow-color) / 0.84),
+    0.4px 0.7px 0.6px -2.5px hsl(var(--shadow-color) / 0.56),
+    1.1px 2.2px 1.8px -5px hsl(var(--shadow-color) / 0.28);
+  --shadow-elevation-medium: 0.3px 0.5px 0.4px hsl(var(--shadow-color) / 0.89),
+    0.4px 0.9px 0.7px -1.7px hsl(var(--shadow-color) / 0.66),
+    1.8px 3.6px 3px -3.3px hsl(var(--shadow-color) / 0.44),
+    5.6px 11.1px 9.3px -5px hsl(var(--shadow-color) / 0.22);
+  --shadow-elevation-high: 0.3px 0.5px 0.4px hsl(var(--shadow-color) / 0.82),
+    0.3px 0.7px 0.6px -0.7px hsl(var(--shadow-color) / 0.72),
+    1px 1.9px 1.6px -1.4px hsl(var(--shadow-color) / 0.62),
+    2.6px 5.3px 4.4px -2.1px hsl(var(--shadow-color) / 0.51),
+    5.9px 11.8px 9.9px -2.9px hsl(var(--shadow-color) / 0.41),
+    11.3px 22.5px 18.9px -3.6px hsl(var(--shadow-color) / 0.31),
+    19.3px 38.6px 32.4px -4.3px hsl(var(--shadow-color) / 0.21),
+    30.5px 61px 51.2px -5px hsl(var(--shadow-color) / 0.1);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f2;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* #region header ............................*/
+
+header {
+  display: flex;
+  background-color: #f5f5f2;
+  box-shadow: 1px 1px 5px 0px #555;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 3rem;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Logo */
+.logo {
+  display: inline-block;
+  height: auto;
+  padding-left: 1rem;
+  flex: 1 1 20%;
+}
+
+.logo img {
+  width: 2rem;
+  height: auto;
+}
+
+/* Nav menu */
+.nav {
+  display: flex;
+  flex: 1 1 100%;
+}
+
+ul.menu {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  /* gap: 1rem; */
+}
+
+.menu a {
+  display: inline-flex;
+  color: #333;
+  align-items: center;
+  column-gap: 0rem;
+}
+
+.menu a:hover {
+  background-color: var(--gray);
+}
+
+.menu a span {
+  display: inline-flex;
+  color: #333;
+  padding: 0.5rem 0;
+}
+
+/* #endregion */
+
+
+
+/* #region article */
+
+section.text {
+  padding: 0 1rem;
+  margin-top: 50px;
+}
+
+/* article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  padding: 3rem 1.5rem 1.5rem;
+  margin: 0 auto;
+  background: #f5f5f2;
+  min-height: 100vh;
+  --font-custom-size: 1em;
+  font-size: var(--font-custom-size);
+  line-height: 1.5;
+  padding: 1rem 0 1rem 0;
+  hyphens: auto;
+  color: inherit;
+  text-align: justify;
+} */
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 1rem 0 1rem 0;
+  hyphens: auto;
+  color: inherit;
+  text-align: justify;
+}
+
+.author-info {
+  font-size: 0.9em;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5em;
+  box-shadow: -1.2px -0.4px 2px -1px #000, 1.2px 0.4px 2px -1px #000;
+  font-variation-settings: initial;
+}
+
+h4.author {
+  padding-top: 3em;
+  padding-bottom: 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 400;
+}
+
+h4.author:before {
+  content: 'Von: ';
+  padding-top: 3em;
+  padding-bottom: 0;
+  font-size: 1rem;
+  colorf:#333;
+}
+
+h2.title {
+  font-size: 1.5rem;
+  padding: .8em 0;
+}
+
+h2.title-2 {
+  font-size: 0.95em;
+  font-weight: 500;
+  color: #222;
+  text-align: justify;
+}
+
+aside .sm {
+  font-size: 0.9em;
+  width: 40%;
+}
+
+aside {
+  padding-left: 0.5em;
+  margin: 1rem;
+  box-shadow: inset 5px 0 5px -6px #737a7d, inset 8px 0 8px -10px #737a7d33;
+  /* font-style: italic; */
+}
+
+aside .lg {
+  font-size: 1.1em;
+  width: 40%;
+}
+
+.sub-author {
+}
+
+.ff {
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid rgba(213, 213, 209, 0.59);
+  box-shadow: 0 4px 2px -5px #00000002, 0 3px 0px 0 #00000003,
+    0 9px 1px -10px #00000005;
+  padding: 1rem 0;
+  width: 35%;
+  margin: 0 auto;
+}
+
+details[open] {
+  padding-left: 1em;
+}
+
+details[open] > summary {
+  transform: translate(-1em, 0px);
+}
+
+#politik {
+  background: #aaa;
+}
+
+#kabarett {
+  background: #ffdd00;
+}
+
+#gesellschaft {
+  background: #ff6b00;
+}
+
+#marktplatz {
+  background: #ff00b4;
+}
+
+#kultur {
+  background: #00b4ff;
+}
+
+.tag {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8em;
+  width: fit-content;
+  padding: 0.2em 0.5em;
+  border-radius: 0.25em;
+  margin: 0.2em;
+  background: #00000079;
+}
+
+/**
+ * *****************************
+ * Close button
+ * *****************************
+ */
+
+#close {
+  color: #000;
+  text-shadow: 0 0 1px #fff8, 0 0 2px #fff;
+  background: none;
+  box-shadow: 0 0 1px #000, 0 0 2px -4px #444, 0 0 4px -8px #999, 0 0 5px #eee;
+  border-radius: 0.35rem;
+  position: fixed;
+  font-size: 1.2rem;
+  line-height: 1;
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  right: 1rem;
+  margin: 0.5rem;
+  margin-left: auto;
+  padding: 0.3rem;
+  position: relative;
+}
+
+blockquote {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  text-decoration: underline;
+  margin: 2rem 4rem 2rem 3rem;
+}
+
+.wrapper {
+  height: calc(99vh - 5rem);
+  margin-top: calc((100vh - 5rem) / 2);
+  transform: translate(0px, -50%);
+}
+
+/* #endregion article */

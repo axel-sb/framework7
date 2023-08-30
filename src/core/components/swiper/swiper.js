@@ -94,7 +94,7 @@ function initSwiper(swiperEl) {
         const tabRouteUrl = router.findTabRouteUrl($(swiper.slides).eq(swiper.activeIndex)[0]);
         if (tabRouteUrl) {
           setTimeout(() => {
-            router.navigate(tabRouteUrl);
+            router.navigate(tabRouteUrl, { transition: 'f7-parallax' });
           }, 0);
         }
       } else {

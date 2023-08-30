@@ -30,12 +30,21 @@ if (document.location.search.indexOf('mode=') >= 0) {
 // Init App
 var app = new Framework7({
   el: '#app',
-  theme,
+  theme: 'ios',
+  darkMode: 'auto',
+  // Extended by Dialog component:
+  dialog: {
+    title: 'My App',
+  },
+  // Extended by Statusbar component:
+  statusbar: {
+    iosOverlaysWebview: true,
+  },
   // store.js,
   store: store,
   // routes.js,
   routes: routes,
-  popup: {
+  /* popup: {
     closeOnEscape: true,
   },
   sheet: {
@@ -46,7 +55,7 @@ var app = new Framework7({
   },
   actions: {
     closeOnEscape: true,
-  },
+  }, */
   vi: {
     placementId: 'pltd4o7ibb9rc653x14',
   },
