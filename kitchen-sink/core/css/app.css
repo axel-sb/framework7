@@ -1,4 +1,4 @@
-/* #region f7 */
+/* #region F7 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 @font-face {
@@ -686,10 +686,10 @@ code {
 }
 /* #endregion */
 
-
-/**
- * Custom css ----------------------------------------------------
+/** #########################################################################
+ * Custom css  ##############################################################
  */
+/* #region custom (F7) */
 
 .navbar .title {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -750,6 +750,9 @@ article {
   color: #333;
 }
 
+/* #endregion */
+
+/* #region-from-hugo */
 /**
  /* copy of hugo styles )======================= ↓
  /*
@@ -788,8 +791,8 @@ ol {
 input {
   border: none;
 }
-; #endregion
-/* #endregion */
+
+
 
 :root {
   --shadow-color: 60deg 4% 52%;
@@ -827,7 +830,9 @@ main {
   margin: 0 auto;
 }
 
-/* #region header ............................*/
+/* #endregion */
+
+/* #region header (hugo) ............................*/
 
 header {
   display: flex;
@@ -889,9 +894,7 @@ ul.menu {
 
 /* #endregion */
 
-
-
-/* #region article */
+/* #region article (hugo) */
 
 section.text {
   padding: 0 1rem;
@@ -947,7 +950,7 @@ h4.author:before {
   padding-top: 3em;
   padding-bottom: 0;
   font-size: 1rem;
-  colorf:#333;
+  color:#333;
 }
 
 h2.title {
@@ -1072,3 +1075,4 @@ blockquote {
 }
 
 /* #endregion article */
+
